@@ -2,37 +2,28 @@
 
 Bu depo, **Sudoku Bulmaca** uygulamasının gizlilik politikasını barındırır.
 
-## GitHub’a yükleme (push)
+**Depo:** [github.com/suleymanbdn/privacy-policy-sudoku](https://github.com/suleymanbdn/privacy-policy-sudoku)
 
-Bu klasör ayrı bir git deposu olarak hazırlandı. **GitHub’da oluşturduğun boş repoyu** aşağıdaki gibi bağla ( `REPO_ADI` = senin repo adın):
+## GitHub’a push
 
 ```bash
 cd privacy_policy_site
-git remote remove origin   # hata verirse yok say
-git remote add origin https://github.com/suleymanbdn/REPO_ADI.git
+git remote add origin https://github.com/suleymanbdn/privacy-policy-sudoku.git
 git push -u origin main
 ```
 
-Kimlik için GitHub **Personal Access Token** veya **SSH** kullanman gerekir; Cursor/agent senin hesabına senin yerine giriş yapamaz.
+(`origin` zaten varsa: `git remote set-url origin https://github.com/suleymanbdn/privacy-policy-sudoku.git`)
 
 ## Yayın adresi (GitHub Pages)
 
-Depo ayarlarında **Settings → Pages**:
+**Settings → Pages** → Source: **Deploy from a branch** → **main** → **/ (root)**
 
-- **Source:** Deploy from a branch  
-- **Branch:** `main` / **folder:** `/ (root)`
+Canlı politika adresi:
 
-Sonra politika şu adreste olur:
+**https://suleymanbdn.github.io/privacy-policy-sudoku/**
 
-**`https://suleymanbdn.github.io/REPO_ADI/`**  
-Örnek repo adı `sudoku-privacy` ise: `https://suleymanbdn.github.io/sudoku-privacy/`
-
-`index.html` içindeki GitHub bağlantılarını, gerçek repo adınla güncelle (metinde `sudoku-privacy` geçiyorsa).
-
-## Play Console
-
-Mağaza listesindeki gizlilik politikası URL’si olarak yukarıdaki bağlantıyı kullan.
+Play Console’da gizlilik politikası URL’si olarak bunu kullan.
 
 ## Yerel önizleme
 
-`index.html` dosyasını tarayıcıda açarak metni kontrol edebilirsin.
+`index.html` dosyasını tarayıcıda aç.
